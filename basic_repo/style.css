@@ -1,0 +1,53 @@
+
+.container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    margin: 1%;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+.box {
+    width: 22%;
+    height: 50%;
+    color: aqua;
+    margin: 3%;
+    border: 3px solid black;
+    text-align: center;
+    background-color: rgb(173, 126, 218);
+}
+
+@media only screen and (max-width: 480px){
+    /* will set these stylings only if the device is a screen with a width <= 480px  */
+    .box {
+        background-color: rgb(172, 172, 116);
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .sm-0 {
+        /* will not display anything with the class .sm-0 if the screen's width < 480px */
+        background-color: red;
+        /* display: none; */
+     }
+}
+
+@media only screen and (min-width: 481px){
+    .med-1 {
+        /* anything with the class .med-1 will get 25% of the available width if the screen's width > 480px */
+        width: 25%;
+    }  
+}
+
+@media only screen and (min-width: 1024px) {
+    .lg-3 {
+        /* anything with this class will occupy 75% of available width on screen > 1024px */
+        width: 75%;
+        background-color: azure;
+    }
+    .lg-1 {
+        /* anything with the class .med-1 will get 25% of the available width if the screen's width > 480px */
+        width: 25%;
+        background-color: brown;
+    }  
+}
